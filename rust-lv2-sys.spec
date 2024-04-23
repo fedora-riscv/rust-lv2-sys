@@ -6,12 +6,13 @@
 
 Name:           rust-lv2-sys
 Version:        2.0.0
-Release:        %autorelease
+Release:        %autorelease -e rv64
 Summary:        Rust-lv2's C header bindings
 
 License:        MIT OR Apache-2.0
 URL:            https://crates.io/crates/lv2-sys
 Source:         %{crates_source}
+Patch0:         add_riscv64.patch
 
 BuildRequires:  rust-packaging >= 21
 
